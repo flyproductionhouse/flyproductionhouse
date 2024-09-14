@@ -1,0 +1,51 @@
+nav {
+    /* background: linear-gradient(to right, #9d674f, #dfcfbd 65%); */
+    background-color: #9d674f;
+    /* background-color: #DEB887; */
+    border-bottom: 1px solid black; /* Set the border to solid black */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a slight shadow for depth */
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+}
+
+.navbar-brand b {
+    font-size: large; /* Font size for the text */
+    margin-top: 5px; /* Space between logo and text */
+    color: white; /* Text color */
+}
+
+.navbar-brand-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+    margin-right: 15px; /* Space between logo and navbar items */
+}
+
+.navbar-brand {
+    height: 65px; /* Logo height */
+    width: 60px; /* Logo width */
+    border-radius: 100%; /* Circular logo */
+}
+
+.navbar-nav {
+    width: 100%; /* Full width for centering */
+    justify-content: center; /* Center nav items */
+    margin-left: -40px;
+}
+
+.productionHouse {
+    color: #dfcfbd;
+    font-size: 5px;
+    margin-top: -10px;
+    margin-left: -15px;
+}

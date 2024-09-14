@@ -1,0 +1,13 @@
+.card {
+    width: 100%; /* Ensure the card takes full width of the column */
+    height: 100vh; /* Set a fixed height for all cards */
+    overflow: hidden; /* Hide overflow to maintain uniformity */
+    border: none;
+}
+
+.card-img-top {
+    width: 100%; /* Set width to 100% to fill the card */
+    height: 100%; /* Set a fixed height for the image */
+    object-fit: contain; /* Use 'contain' to fit the image inside the container */
+    object-position: center; /* Center the image vertically */
+}

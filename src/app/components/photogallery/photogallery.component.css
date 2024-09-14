@@ -1,0 +1,69 @@
+  .card-group {
+    margin: 20px;
+  }
+  
+  .card-img {
+    object-fit: cover;
+    height: 500px;
+  }
+
+  .card {
+    width: 100%; /* Ensure the card takes full width of the column */
+    overflow: hidden; /* Hide overflow to maintain uniformity */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-color: black;
+    border-width: medium;
+    border-radius: 25px; /* Match the card's border radius */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+  }
+
+  .card-text {
+    text-align: justify;
+    text-justify: inter-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Set the maximum number of lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-body {
+    text-align: center
+  }
+  
+  body {
+    /* background-color: #995e4f; */
+    /* background-color: #F5F5DC; */
+    background: linear-gradient(to bottom, #9d674f, #dfcfbd);
+  }
+
+ .italic {
+    font-style: italic; /* Make text italic */
+ }
+
+ .btn-gallery {
+    border-width: 3px;
+    border-color: black;
+ }
+
+ .card {
+    position: relative; /* Ensure the card is positioned relative for the overlay */
+  }
+  
+  .overlay {
+    position: absolute; /* Position overlay absolutely within the card */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensure overlay is above the image */
+  }
+  
+  .card-img-overlay {
+    z-index: 2; /* Ensure text is above the overlay */
+  }
