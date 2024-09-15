@@ -1,11 +1,3 @@
-nav {
-    /* background: linear-gradient(to right, #9d674f, #dfcfbd 65%); */
-    background-color: transparent;
-    /* background-color: #DEB887; */
-    border-bottom: 1px solid black; /* Set the border to solid black */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a slight shadow for depth */
-}
-
 .navbar-nav {
     float: right;
 }

@@ -2,3 +2,13 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Dancing Script}
+
+@media (max-width: 991.98px) {
+    .fixed-top {
+      position: static !important; /* Remove fixed positioning on mobile */
+    }
+
+    nav {
+        background-color: #9d674f;
+    }
+}

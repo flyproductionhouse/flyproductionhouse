@@ -49,3 +49,10 @@
     animation-timeline: view();
     animation-range: entry 0% cover 35%;
  }
+
+ body {
+    /* background-color: #995e4f; */
+    /* background-color: #F5F5DC; */
+    background: linear-gradient(to bottom, #9d674f, #dfcfbd);
+    height: auto;
+  }
