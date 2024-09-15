@@ -11,3 +11,11 @@
     object-fit: contain; /* Use 'contain' to fit the image inside the container */
     object-position: center; /* Center the image vertically */
 }
+
+body {
+    /* background-color: #995e4f; */
+    /* background-color: #F5F5DC; */
+    background: linear-gradient(to bottom, #9d674f, #dfcfbd 15%);
+    min-height: 100vh;
+    height: auto;
+}

@@ -54,5 +54,6 @@
     /* background-color: #995e4f; */
     /* background-color: #F5F5DC; */
     background: linear-gradient(to bottom, #9d674f, #dfcfbd 10%);
+    min-height: 100vh;
     height: auto;
   }
