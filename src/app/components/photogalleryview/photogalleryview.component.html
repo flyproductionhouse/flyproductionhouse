@@ -1,34 +1,33 @@
-<body>
-    <br><br><br><br><br>
-<div class="container">
-    <hr>
-    <span class="clientName">
-        <h2 class="italic">{{ card.name.replace("fly_", "").split('_')[0] | replaceExtension }}</h2>
-    </span>
-    <hr>
-    <span class="clientName">
-        <h4>{{ card.name.replace("fly_", "").split('_')[1] | replaceExtension }}</h4>
-    </span>
-    <hr>
-    <span class="clientName">
-        <h3><b>Location: </b>{{ card.name.replace("fly_", "").split('_')[2] | replaceExtension }}</h3>
-    </span>
-    <hr>
-    <br>
+<body><br><br class="break"><br class="break"><br class="break"><br class="break"><br class="break">
+    <div class="container">
+        <hr>
+        <span class="clientName">
+            <h2 class="italic">{{ card.name.replace("fly_", "").split('_')[0] | replaceExtension }}</h2>
+        </span>
+        <hr>
+        <span class="clientName">
+            <h4>{{ card.name.replace("fly_", "").split('_')[1] | replaceExtension }}</h4>
+        </span>
+        <hr>
+        <span class="clientName">
+            <h3><b>Location: </b>{{ card.name.replace("fly_", "").split('_')[2] | replaceExtension }}</h3>
+        </span>
+        <hr>
+        <br>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <ng-container *ngFor="let img of images">
-        <div class="col">
-          <div class="card h-100">
-            <img 
-              src="https://drive.google.com/thumbnail?id={{ img.webViewLink | replaceExtension }}&sz=w500" 
-              class="card-img-top" 
-              alt="{{ img.mediaName || 'Image' }}"
-              (click)="viewFullImage(img.webViewLink)" 
-            >
-          </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <ng-container *ngFor="let img of images">
+                <div class="col">
+                <div class="card h-100">
+                    <img 
+                    src="https://drive.google.com/thumbnail?id={{ img.webViewLink | replaceExtension }}&sz=w500" 
+                    class="card-img-top" 
+                    alt="{{ img.mediaName || 'Image' }}"
+                    (click)="viewFullImage(img.webViewLink)" 
+                    >
+                </div>
+                </div>
+            </ng-container>
         </div>
-      </ng-container>
     </div>
-  </div>
 </body>

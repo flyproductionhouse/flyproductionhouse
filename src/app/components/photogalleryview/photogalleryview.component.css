@@ -56,4 +56,11 @@
     background: linear-gradient(to bottom, #9d674f, #dfcfbd 10%);
     min-height: 100vh;
     height: auto;
-  }
+}
+
+
+@media (max-width: 992px) { /* Adjust the breakpoint as needed */
+    .break {
+        display: none;
+    }
+}

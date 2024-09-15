@@ -9,3 +9,9 @@ body {
     min-height: 100vh;
     height: auto;
 }
+
+@media (max-width: 992px) { /* Adjust the breakpoint as needed */
+    .break {
+        display: none;
+    }
+}

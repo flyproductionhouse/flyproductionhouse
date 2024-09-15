@@ -41,6 +41,7 @@
     background: linear-gradient(to bottom, #9d674f, #dfcfbd);
     min-height: 100vh;
     height: auto;
+    overflow-x: hidden;
   }
 
  .italic {
@@ -69,3 +70,9 @@
   .card-img-overlay {
     z-index: 2; /* Ensure text is above the overlay */
   }
+
+@media (min-width: 992px) { /* Adjust the breakpoint as needed */
+    .container {
+        margin-top: 8%; /* Adjust this value to shift content down */
+    }
+}

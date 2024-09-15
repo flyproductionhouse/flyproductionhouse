@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { YouTubePlayer, YOUTUBE_PLAYER_CONFIG } from '@angular/youtube-player';
 import { PhotogalleryComponent } from './components/photogallery/photogallery.component';
@@ -9,6 +9,7 @@ import { GoogledriveService } from './services/googledrive.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "./components/footer/footer.component";
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -39,4 +40,14 @@ import { FooterComponent } from "./components/footer/footer.component";
 
 export class AppComponent {
   title = 'flyhouseproduction';
+
+  constructor(private router:Router) {}
+
+  ngOnInit(): void {
+    this.router.events.pipe(
+      filter((event: any) => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      window.scrollTo(0, 0); // Scroll to the top of the page
+    });
+  }
 }

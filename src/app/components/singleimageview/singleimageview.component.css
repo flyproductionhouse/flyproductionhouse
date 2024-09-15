@@ -3,11 +3,12 @@
     height: 100vh; /* Set a fixed height for all cards */
     overflow: hidden; /* Hide overflow to maintain uniformity */
     border: none;
+    background: transparent;
 }
 
 .card-img-top {
     width: 100%; /* Set width to 100% to fill the card */
-    height: 100%; /* Set a fixed height for the image */
+    height: 85%; /* Set a fixed height for the image */
     object-fit: contain; /* Use 'contain' to fit the image inside the container */
     object-position: center; /* Center the image vertically */
 }
@@ -18,4 +19,10 @@ body {
     background: linear-gradient(to bottom, #9d674f, #dfcfbd 15%);
     min-height: 100vh;
     height: auto;
+}
+
+@media (max-width: 992px) { /* Adjust the breakpoint as needed */
+    .break {
+        display: none;
+    }
 }
