@@ -6,10 +6,9 @@
 
 .back-video {
     position: relative; /* Keep it in the normal stacking context */
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     width: 100%; /* Full width */
-    height: 100vh; /* Full height */
     object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
 }
 
