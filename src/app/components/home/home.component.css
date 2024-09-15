@@ -1,27 +1,10 @@
-.video-container {
-    position: relative; /* Position relative for absolute positioning of the video */
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-}
 
 .back-video {
-    position: relative; /* Keep it in the normal stacking context */
     /* top: 0;
     left: 0; */
     width: 100%; /* Full width */
     object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
 }
-
-.content {
-    position: absolute; /* Position absolute to overlay on the video */
-    top: 80%; /* Center vertically */
-    left: 49%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
-    color: white; /* Change text color for visibility */
-    text-align: center; /* Center text */
-    z-index: 1; /* Ensure content is above the video */
-}
-
 
 .overlay {
     position: absolute;
@@ -30,10 +13,5 @@
     width: 100%;
     height: 100%;
     display: flex; /* Center content */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
     background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
-    color: white; /* Text color */
-    text-align: center; /* Center text */
-    pointer-events: none; /* Allow clicks to pass through */
 }

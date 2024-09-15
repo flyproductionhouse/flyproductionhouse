@@ -8,20 +8,22 @@ import { routes } from './app.routes';
 import { GoogledriveService } from './services/googledrive.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    RouterLink, 
-    YouTubePlayer, 
+    RouterLink,
+    YouTubePlayer,
     NavbarComponent,
     PhotogalleryComponent,
     VideogalleryComponent,
     HttpClientModule,
-    CommonModule
-  ],
+    CommonModule,
+    FooterComponent
+],
   providers: [
       {
         provide: YOUTUBE_PLAYER_CONFIG,

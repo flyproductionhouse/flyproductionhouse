@@ -1,3 +1,9 @@
+/* Navbar styles */
+nav {
+    background-color: transparent; /* Start with a transparent background */
+    transition: background-color 0.4s ease-in-out; /* Smooth transition for background color */
+}
+
 .navbar-nav {
     float: right;
 }
@@ -36,17 +42,48 @@
 }
 
 .nav-link {
-    color: #dfcfbd;
-    font-size: large;
+    color: #dfcfbd; /* Default link color */
+    font-size: large; /* Font size for links */
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
 .productionHouse {
-    color: #dfcfbd;
-    font-size: 5px;
-    margin-top: -10px;
-    margin-left: -15px;
+    color: #dfcfbd; /* Text color for production house */
+    font-size: 5px; /* Font size */
+    margin-top: -10px; /* Adjust spacing */
+    margin-left: -15px; /* Adjust spacing */
+}
+
+/* Styles for when the navbar is scrolled */
+.navbar.scrolled {
+    background-color: #9d674f; /* Change to your desired color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
+
+/* Change link color when scrolled */
+.navbar.scrolled .nav-link {
+    color: #f8f9fa; /* Change to your desired link color when scrolled */
+}
+
+/* Media query to prevent styles from applying on mobile devices */
+@media (max-width: 991.98px) {
+    .fixed-top {
+        position: static !important; /* Remove fixed positioning on mobile */
+    }
+
+    nav {
+        background-color: #9d674f; /* Keep background color on mobile */
+    }
+
+    .navbar.scrolled {
+        background-color: transparent; /* Keep navbar background transparent on mobile */
+    }
+
+    /* Keep link color the same on mobile */
+    .navbar.scrolled .nav-link {
+        color: #dfcfbd; /* Default link color on mobile */
+    }
 }

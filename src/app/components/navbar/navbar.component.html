@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-light p-2">
+<nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark p-2">
     <div class="container-fluid">
         <a routerLink="/">
             <div class="navbar-brand-container">
@@ -11,12 +11,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" routerLink="/">HOME</a>
-                <a class="nav-link" routerLink="/photo-gallery">PHOTO GALLERY</a>
-                <a class="nav-link" href="#">PRICING</a>
+                <a class="nav-link" routerLink="/" (click)="onLinkClick()">HOME</a>
+                <a class="nav-link" routerLink="/photo-gallery" (click)="onLinkClick()">PHOTO GALLERY</a>
+                <a class="nav-link" href="/video-gallery" (click)="onLinkClick()">VIDEO GALLERY</a>
                 <a class="nav-link disabled">DISABLED</a>
             </div>
         </div>
     </div>
 </nav>
-
