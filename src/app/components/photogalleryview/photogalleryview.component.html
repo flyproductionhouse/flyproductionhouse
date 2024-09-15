@@ -1,20 +1,5 @@
 <body><br><br class="break"><br class="break"><br class="break"><br class="break"><br class="break">
     <div class="container">
-        <hr>
-        <span class="clientName">
-            <h2 class="italic">{{ card.name.replace("fly_", "").split('_')[0] | replaceExtension }}</h2>
-        </span>
-        <hr>
-        <span class="clientName">
-            <h4>{{ card.name.replace("fly_", "").split('_')[1] | replaceExtension }}</h4>
-        </span>
-        <hr>
-        <span class="clientName">
-            <h3><b>Location: </b>{{ card.name.replace("fly_", "").split('_')[2] | replaceExtension }}</h3>
-        </span>
-        <hr>
-        <br>
-
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <ng-container *ngFor="let img of images">
                 <div class="col">
@@ -28,5 +13,19 @@
                 </div>
             </ng-container>
         </div>
+        <br>
+        <hr>
+        <span class="clientName">
+            <h2 class="italic">{{ card.name.replace("fly_", "").split('_')[0] | replaceExtension }}</h2>
+        </span>
+        <hr>
+        <span class="clientName">
+            <h4>{{ card.name.replace("fly_", "").split('_')[1] | replaceExtension }}</h4>
+        </span>
+        <hr>
+        <span class="clientName">
+            <h3><b>Location: </b>{{ card.name.replace("fly_", "").split('_')[2] | replaceExtension }}</h3>
+        </span>
+        <hr>
     </div>
 </body>
