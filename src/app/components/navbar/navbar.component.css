@@ -43,6 +43,15 @@ nav {
     margin-left: -40px;
 }
 
+.nav-link {
+    color: #dfcfbd;
+    font-size: large;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
 .productionHouse {
     color: #dfcfbd;
     font-size: 5px;
