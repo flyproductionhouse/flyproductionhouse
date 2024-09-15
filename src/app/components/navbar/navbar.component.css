@@ -57,7 +57,6 @@ nav {
     margin-left: -15px; /* Adjust spacing */
 }
 
-/* Styles for when the navbar is scrolled */
 .navbar.scrolled {
     background-color: #9d674f; /* Change to your desired color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */

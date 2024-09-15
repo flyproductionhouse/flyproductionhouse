@@ -47,7 +47,7 @@ export class AppComponent {
     this.router.events.pipe(
       filter((event: any) => event instanceof NavigationEnd)
     ).subscribe(() => {
-      window.scrollTo(0, 0); // Scroll to the top of the page
+      window.scrollTo({ top: 0, behavior: 'instant' });
     });
   }
 }
