@@ -1,16 +1,16 @@
 <body>
     <div class="container">
         <div class="row">
-          <div *ngFor="let card of medias" class="col-md-4 mb-4 d-flex"> <!-- Responsive column and flex container -->
-            <div class="card bg-dark text-white flex-fill position-relative" (click)="viewGallery(card.id)"> <!-- Use flex-fill to ensure equal height -->
-              <img src="https://drive.google.com/thumbnail?id={{ card.mediaUrl | replaceExtension }}" class="card-img" alt="..."> <!-- Set a fixed height for the image -->
-              <div class="overlay"></div> <!-- Black overlay -->
-              <div class="card-img-overlay d-flex flex-column justify-content-end"> <!-- Flexbox for text alignment -->
+          <div *ngFor="let card of medias" class="col-md-4 mb-4 d-flex">
+            <div class="card bg-dark text-white flex-fill position-relative" (click)="viewGallery(card.id)"> 
+              <img src="https://drive.google.com/thumbnail?id={{ card.mediaUrl | replaceExtension }}" class="card-img" alt="..."> 
+              <div class="overlay"></div>
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
                 <h3 class="card-title italic"><b>Client: {{ card.mediaName.replace("fly_", "").split('_')[0] | replaceExtension }}</b></h3>
                 <h5 class="card-text"><b>Description:</b> {{ card.mediaName.replace("fly_", "").split('_')[1] }}</h5>
                 <h4 class="card-text"><b>Location:</b> {{ card.mediaName.replace("fly_", "").split('_')[2] | replaceExtension }}</h4>
               </div>
-            </div>
+            </div><br>
           </div>
         </div>
     </div>

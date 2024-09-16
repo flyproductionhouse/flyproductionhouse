@@ -42,8 +42,9 @@ nav {
 }
 
 .nav-link {
-    color: #dfcfbd; /* Default link color */
+    color: #000000; /* Default link color */
     font-size: large; /* Font size for links */
+    font-weight: 500;
 }
 
 .nav-link:hover {

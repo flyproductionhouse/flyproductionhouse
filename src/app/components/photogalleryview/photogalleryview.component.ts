@@ -31,10 +31,27 @@ export class PhotogalleryviewComponent {
               this.card = imageObj
             }
           })
+          this.sortImages();
           console.log(this.images)
         })
     }
 
+    sortImages() {
+      this.images.sort((a, b) => {
+        // Example: Sort by name (case-insensitive)
+        const nameA = a.name.toUpperCase();
+        const nameB = b.name.toUpperCase();
+  
+        if (nameA < nameB) {
+          return -1; // a comes before b
+        }
+        if (nameA > nameB) {
+          return 1; // a comes after b
+        }
+        return 0; // names are equal
+      });
+    }
+    
     viewFullImage(imageLink:string) {
       localStorage.setItem("singleImageUrl", imageLink)
       this.router.navigate(['image-view'])

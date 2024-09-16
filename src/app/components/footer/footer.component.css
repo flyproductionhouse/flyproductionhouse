@@ -1,0 +1,24 @@
+footer {
+    background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+  }
+
+  footer a:hover {
+    color: #ffc107; /* Change link color on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+
+  .font-weight-bold {
+    font-weight: 700; /* Make headings bold */
+  }
+
+  .company-name{
+      margin-top: -30px;
+  }
+
+  .whatsapp{
+      text-decoration: none;
+  }
+
+  a {
+    color: white;
+  }

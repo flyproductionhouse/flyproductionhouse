@@ -14,20 +14,20 @@ export class HomeComponent {
     player : any = { autoplay: 1, mute: 1, controls: 0 }
 
     ngOnInit() {
-      setTimeout(() => {
-        this.hideGifAndShowVideo();
-      }, 3000);
+      // setTimeout(() => {
+      //   this.hideGifAndShowVideo();
+      // }, 3000);
     }
 
-    hideGifAndShowVideo() {
-      const flyLogo = document.getElementById('flyLogo');
-      const videoContainer = document.getElementById('videoContainer');
+    // hideGifAndShowVideo() {
+    //   const flyLogo = document.getElementById('flyLogo');
+    //   const videoContainer = document.getElementById('videoContainer');
   
-      if (flyLogo) {
-        flyLogo.style.display = 'none'; // Hide the GIF
-      }
-      if (videoContainer) {
-        videoContainer.style.display = 'block'; // Show the video
-      }
-    }
+    //   if (flyLogo) {
+    //     flyLogo.style.display = 'none'; // Hide the GIF
+    //   }
+    //   if (videoContainer) {
+    //     videoContainer.style.display = 'block'; // Show the video
+    //   }
+    // }
 }

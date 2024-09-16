@@ -12,8 +12,6 @@
     overflow: hidden; /* Hide overflow to maintain uniformity */
     transition: transform 0.2s; /* Smooth transition for hover effect */
     background-color: rgba(255, 255, 255, 0.5); 
-    border-color: black;
-    border-width: medium;
     border-radius: 25px; /* Match the card's border radius */
   }
   
@@ -63,7 +61,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.1); /* Black overlay with 50% opacity */
     z-index: 1; /* Ensure overlay is above the image */
   }
   
