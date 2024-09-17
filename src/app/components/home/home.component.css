@@ -44,3 +44,17 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .main-content-home {
+    background-color: #E8E4E1;
+  }
+
+  #vedioIframe {
+    position: absolute;
+    top: -10%; /* Adjust this value to crop from the top */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #videoContainer {
+    background-color: #E8E4E1;
+}

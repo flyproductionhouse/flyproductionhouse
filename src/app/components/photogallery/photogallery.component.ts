@@ -5,11 +5,12 @@ import { CardStructure } from '../../interfaces/card-structure';
 import { CommonModule } from '@angular/common';
 import { ReplaceExtensionPipe } from '../../replace-extension.pipe';
 import { Route, Router } from '@angular/router';
+import { CapitalizePipe } from '../../capitalize.pipe';
 
 @Component({
   selector: 'app-photogallery',
   standalone: true,
-  imports: [CommonModule, ReplaceExtensionPipe],
+  imports: [CommonModule, ReplaceExtensionPipe, CapitalizePipe],
   templateUrl: './photogallery.component.html',
   styleUrl: './photogallery.component.css'
 })

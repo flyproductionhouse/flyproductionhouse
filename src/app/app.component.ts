@@ -10,6 +10,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "./components/footer/footer.component";
 import { filter } from 'rxjs';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBgu76wPFD5wzPyIqC2qB6B2qABy-TFx2E",
+  authDomain: "flyproductionhouse-f5ea1.firebaseapp.com",
+  projectId: "flyproductionhouse-f5ea1",
+  storageBucket: "flyproductionhouse-f5ea1.appspot.com",
+  messagingSenderId: "212827303513",
+  appId: "1:212827303513:web:25609222e18f37227e8b48"
+};
 
 @Component({
   selector: 'app-root',

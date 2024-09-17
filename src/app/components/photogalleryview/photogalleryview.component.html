@@ -2,30 +2,33 @@
     <div class="container">
         <hr>
         <span class="clientName">
-            <h2 class="italic">{{ card.name.replace("fly_", "").split('_')[0] | replaceExtension }}</h2>
+            <h2 class="italic"><i class="fa-solid fa-user"></i> {{ card.name.replace("fly_", "").split('_')[0] | replaceExtension }}</h2>
         </span>
-        <hr>
-        <div class="row row-cols-1 row-cols-md-1 g-4">
+        <hr><br>
+        <div class="row row-cols-1 g-4">
             <ng-container *ngFor="let img of images">
-                <div class="col">
-                <div class="card h-100">
-                    <img 
-                    src="https://drive.google.com/thumbnail?id={{ img.webViewLink | replaceExtension }}&sz=w500" 
-                    class="card-img-top" 
-                    alt="{{ img.mediaName || 'Image' }}"
-                    >
+                <div *ngIf="img.name && img.name.split('_').length > 1 && img.name.split('_')[0] != 'fly'">
+                    <h1 style="font-family: 'Dancing Script', cursive; text-align: center;">{{ img.name.split('_')[1] | replaceExtension | capitalize }}</h1>
                 </div>
+                <div class="col">
+                    <div class="card h-100" style="align-items: center; border: none;">
+                        <img 
+                        src="https://drive.google.com/thumbnail?id={{ img.webViewLink | replaceExtension }}&sz=w600" 
+                        class="card-img-top" 
+                        alt="{{ img.mediaName || 'Image' }}"
+                        >
+                    </div>
                 </div>
             </ng-container>
         </div>
         <br>
         <hr>
         <span class="clientName">
-            <h4>{{ card.name.replace("fly_", "").split('_')[1] | replaceExtension }}</h4>
+            <h4><i class="fa-solid fa-circle-info"></i> {{ card.name.replace("fly_", "").split('_')[1] | replaceExtension }}</h4>
         </span>
         <hr>
         <span class="clientName">
-            <h3><b>Location: </b>{{ card.name.replace("fly_", "").split('_')[2] | replaceExtension }}</h3>
+            <h3><i class="fa-solid fa-location-dot"></i> {{ card.name.replace("fly_", "").split('_')[2] | replaceExtension }}</h3>
         </span>
         <hr>
     </div>

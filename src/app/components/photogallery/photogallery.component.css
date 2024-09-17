@@ -1,3 +1,25 @@
+.card-img-top {
+  width: 100%; /* Full width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-bottom: 1px solid #E8E4E1; /* Optional: border under image */
+}
+
+.d-flex-wrapper {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Space below the wrapper */
+}
+
+.d-flex-wrapper p, .d-flex-wrapper h3 {
+  margin-bottom: 0; /* Remove default margin */
+}
+
+.d-flex-wrapper i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
   .card-group {
     margin: 20px;
   }
@@ -36,7 +58,7 @@
   body {
     /* background-color: #995e4f; */
     /* background-color: #F5F5DC; */
-    background: linear-gradient(to bottom, #9d674f, #dfcfbd);
+    background: linear-gradient(to bottom, #b78671 10%, #E8E4E1);
     min-height: 100vh;
     height: auto;
     overflow-x: hidden;
@@ -55,20 +77,6 @@
     position: relative; /* Ensure the card is positioned relative for the overlay */
   }
   
-  .overlay {
-    position: absolute; /* Position overlay absolutely within the card */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1); /* Black overlay with 50% opacity */
-    z-index: 1; /* Ensure overlay is above the image */
-  }
-  
-  .card-img-overlay {
-    z-index: 2; /* Ensure text is above the overlay */
-  }
-
 @media (min-width: 992px) { /* Adjust the breakpoint as needed */
     .container {
         margin-top: 8%; /* Adjust this value to shift content down */

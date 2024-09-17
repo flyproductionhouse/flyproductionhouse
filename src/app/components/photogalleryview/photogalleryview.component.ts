@@ -5,11 +5,12 @@ import { ReplaceExtensionPipe } from '../../replace-extension.pipe';
 import { Router } from '@angular/router';
 import { CardStructure } from '../../interfaces/card-structure';
 import { MediaFile } from '../../interfaces/media-file';
+import { CapitalizePipe } from '../../capitalize.pipe';
 
 @Component({
   selector: 'app-photogalleryview',
   standalone: true,
-  imports: [CommonModule, ReplaceExtensionPipe],
+  imports: [CommonModule, ReplaceExtensionPipe, CapitalizePipe],
   templateUrl: './photogalleryview.component.html',
   styleUrl: './photogalleryview.component.css'
 })
@@ -17,6 +18,8 @@ export class PhotogalleryviewComponent {
     private photoGalleryId: any;
     card: any;
     images: any[] = [];
+    googleMapsUrl: string | undefined
+
     constructor(private googleDriveService: GoogledriveService, private router: Router) {}
 
     ngOnInit(): void {
@@ -51,9 +54,18 @@ export class PhotogalleryviewComponent {
         return 0; // names are equal
       });
     }
-    
+
     viewFullImage(imageLink:string) {
       localStorage.setItem("singleImageUrl", imageLink)
       this.router.navigate(['image-view'])
+    }
+
+    openGoogleMaps(name: string) {
+      const locationParts = name.replace('fly_', '').split('_');
+      const query = locationParts.length > 2 ? locationParts[2] : locationParts.join(' ');
+  
+      // Encode the query to handle special characters
+      const encodedQuery = encodeURIComponent(query);
+      this.googleMapsUrl =  `https://www.google.com/maps/search/?api=1&query=${encodedQuery}`;
     }
 }
