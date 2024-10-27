@@ -4,6 +4,7 @@ import { PhotogalleryComponent } from './components/photogallery/photogallery.co
 import { VideogalleryComponent } from './components/videogallery/videogallery.component';
 import { PhotogalleryviewComponent } from './components/photogalleryview/photogalleryview.component';
 import { SingleimageviewComponent } from './components/singleimageview/singleimageview.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
 
 export const routes: Routes = [
     { 'path': '', component: HomeComponent },
@@ -11,4 +12,5 @@ export const routes: Routes = [
     { 'path': 'video-gallery', component: VideogalleryComponent},
     { 'path': 'photo-gallery-view', component: PhotogalleryviewComponent},
     { 'path': 'image-view', component: SingleimageviewComponent},
+    { 'path': 'contact-us', component: ContactusComponent }
 ];
