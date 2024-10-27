@@ -51,10 +51,23 @@
 
   #vedioIframe {
     position: absolute;
-    top: -10%; /* Adjust this value to crop from the top */
+    top: -10%; /* Crop from the top as desired */
+    left: 50%; /* Center the iframe */
     height: auto; /* Maintain aspect ratio */
+    transform: translateX(-50%); /* Center the iframe */
   }
 
   #videoContainer {
+    position: relative;
+    width: 100%;
     background-color: #E8E4E1;
+    overflow: hidden; /* Prevent overflow */
+    z-index: 1; /* Ensure it's below the navbar */
+  }
+
+  @media (max-width: 600px) {
+    #vedioIframe {
+        top: -23%; /* Adjust cropping for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
