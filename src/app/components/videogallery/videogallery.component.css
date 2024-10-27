@@ -15,3 +15,20 @@ body {
         display: none;
     }
 }
+
+.icon {
+    margin: 0 8px; /* Space around icons */
+    animation: pulse 1s infinite; /* Animation effect */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
