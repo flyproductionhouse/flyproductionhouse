@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 import { ReplaceExtensionPipe } from '../../replace-extension.pipe';
 import { Route, Router } from '@angular/router';
 import { CapitalizePipe } from '../../capitalize.pipe';
+import { DataService } from '../../services/data.service';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-photogallery',
@@ -24,9 +26,16 @@ export class PhotogalleryComponent {
   card: CardStructure | undefined;
 
 
-  constructor(private googleDriveService: GoogledriveService, private router: Router) {}
+  constructor(private googleDriveService: GoogledriveService, private router: Router, private dataService: DataService, private title: Title, private meta: Meta) {}
 
   ngOnInit(): void {
+    this.title.setTitle(this.dataService.title);
+    this.meta.addTags([
+      { name: 'description', content: this.dataService.description },
+      { name: 'keywords', content: this.dataService.keywords},
+      { name: 'viewport', content: this.dataService.viewport}
+    ])
+
     this.googleDriveService.getAllMediaFromFolder(this.folderId).subscribe(folder => {
       this.folderStructure = folder;
       this.subFolders = folder.subfolders;

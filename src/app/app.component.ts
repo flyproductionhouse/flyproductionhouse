@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from "./components/footer/footer.component";
 import { filter } from 'rxjs';
 import { initializeApp } from "firebase/app";
+import { DataService } from './services/data.service';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBgu76wPFD5wzPyIqC2qB6B2qABy-TFx2E",
@@ -42,7 +43,8 @@ const firebaseConfig = {
           disablePlaceholder: false
         }
       },
-      GoogledriveService
+      GoogledriveService,
+      DataService
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
