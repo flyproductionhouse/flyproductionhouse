@@ -39,8 +39,8 @@ export class PhotogalleryComponent {
     this.googleDriveService.getAllMediaFromFolder(this.folderId).subscribe(folder => {
       this.folderStructure = folder;
       this.subFolders = folder.subfolders;
-      console.log('Folder Structure:', this.folderStructure);
-      console.log('Sub Folders:', this.subFolders);
+      // console.log('Folder Structure:', this.folderStructure);
+      // console.log('Sub Folders:', this.subFolders);
       this.subFolders.forEach((ele) => {
         const card: CardStructure = {
           id: ele.id,
@@ -55,7 +55,7 @@ export class PhotogalleryComponent {
         })
         this.medias.push(card);
       })
-      console.log(this.medias)
+      // console.log(this.medias)
     });
   }
 
