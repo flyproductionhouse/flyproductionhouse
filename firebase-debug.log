@@ -40,3 +40,71 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 [error] 
 [error] Error: Failed to get Firebase project flyproductionhouse-f5ea1. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-01-14T17:44:33.530Z] ----------------------------------------------------------------------
+[debug] [2025-01-14T17:44:33.532Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-14T17:44:33.533Z] CLI Version:   13.29.1
+[debug] [2025-01-14T17:44:33.533Z] Platform:      win32
+[debug] [2025-01-14T17:44:33.533Z] Node Version:  v20.18.0
+[debug] [2025-01-14T17:44:33.533Z] Time:          Tue Jan 14 2025 23:14:33 GMT+0530 (India Standard Time)
+[debug] [2025-01-14T17:44:33.533Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-14T17:44:33.592Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-14T17:44:33.593Z] > authorizing via signed-in user (dboutsource.info@gmail.com)
+[debug] [2025-01-14T17:44:33.593Z] [iam] checking project flyproductionhouse-f5ea1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-14T17:44:33.594Z] Checked if tokens are valid: true, expires at: 1736879621249
+[debug] [2025-01-14T17:44:33.594Z] Checked if tokens are valid: true, expires at: 1736879621249
+[debug] [2025-01-14T17:44:33.595Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions [none]
+[debug] [2025-01-14T17:44:33.595Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions x-goog-quota-user=projects/flyproductionhouse-f5ea1
+[debug] [2025-01-14T17:44:33.596Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-14T17:44:35.368Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions 200
+[debug] [2025-01-14T17:44:35.369Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions {}
+[debug] [2025-01-14T17:44:35.369Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project flyproductionhouse-f5ea1:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-01-14T17:44:35.369Z] Checked if tokens are valid: true, expires at: 1736879621249
+[debug] [2025-01-14T17:44:35.370Z] Checked if tokens are valid: true, expires at: 1736879621249
+[debug] [2025-01-14T17:44:35.370Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 [none]
+[debug] [2025-01-14T17:44:36.075Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 403
+[debug] [2025-01-14T17:44:36.075Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-01-14T17:44:36.077Z] Request to https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 had HTTP Error: 403, The caller does not have permission
+[debug] [2025-01-14T17:44:36.080Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project flyproductionhouse-f5ea1. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-01-14T17:44:43.322Z] ----------------------------------------------------------------------
+[debug] [2025-01-14T17:44:43.324Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-14T17:44:43.325Z] CLI Version:   13.29.1
+[debug] [2025-01-14T17:44:43.325Z] Platform:      win32
+[debug] [2025-01-14T17:44:43.325Z] Node Version:  v20.18.0
+[debug] [2025-01-14T17:44:43.325Z] Time:          Tue Jan 14 2025 23:14:43 GMT+0530 (India Standard Time)
+[debug] [2025-01-14T17:44:43.325Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-14T17:44:43.387Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-14T17:44:43.388Z] > authorizing via signed-in user (dboutsource.info@gmail.com)
+[debug] [2025-01-14T17:44:43.388Z] [iam] checking project flyproductionhouse-f5ea1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-14T17:44:43.389Z] Checked if tokens are valid: true, expires at: 1736879621249
+[debug] [2025-01-14T17:44:43.389Z] Checked if tokens are valid: true, expires at: 1736879621249
+[debug] [2025-01-14T17:44:43.390Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions [none]
+[debug] [2025-01-14T17:44:43.390Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions x-goog-quota-user=projects/flyproductionhouse-f5ea1
+[debug] [2025-01-14T17:44:43.390Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-14T17:44:45.082Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions 200
+[debug] [2025-01-14T17:44:45.082Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flyproductionhouse-f5ea1:testIamPermissions {}
+[debug] [2025-01-14T17:44:45.082Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project flyproductionhouse-f5ea1:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-01-14T17:44:45.083Z] Checked if tokens are valid: true, expires at: 1736879621249
+[debug] [2025-01-14T17:44:45.083Z] Checked if tokens are valid: true, expires at: 1736879621249
+[debug] [2025-01-14T17:44:45.084Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 [none]
+[debug] [2025-01-14T17:44:45.897Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 403
+[debug] [2025-01-14T17:44:45.897Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-01-14T17:44:45.899Z] Request to https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 had HTTP Error: 403, The caller does not have permission
+[debug] [2025-01-14T17:44:45.902Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/flyproductionhouse-f5ea1 had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project flyproductionhouse-f5ea1. Please make sure the project exists and your account has permission to access it.
