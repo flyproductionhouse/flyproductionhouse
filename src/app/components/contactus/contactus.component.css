@@ -1,36 +1,109 @@
 body {
     background: linear-gradient(to bottom, #b78671 10%, #E8E4E1);
     min-height: 100vh;
-    height: auto;
     overflow-x: hidden;
-}
-
-.contact-info {
-    background: #e8e4e183;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* CONTACT INFO */
+  .contact-info {
+    background: transparent; /* Solid background */
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info h2 {
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h2 {
     margin-bottom: 20px;
-}
-
-.info-item {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .info-item {
     margin-bottom: 20px;
-}
-
-.info-item i {
-    color: #080808; /* Bootstrap primary color */
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .info-item i {
+    color: #0a56a8;
     margin-right: 10px;
-}
-
-.social-icons a {
-    color: #0a56a8; /* Bootstrap primary color */
-    margin-right: 15px;
-    font-size: 1.5rem; /* Increase icon size */
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
-}
+    color: #0a56a8;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* SOCIAL ICONS */
+  .social-icons a {
+    color: #0a56a8;
+    margin-right: 15px;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #083d7e;
+  }
+  
+  /* FORM STYLES */
+  form {
+    background: transparent;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  form h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  input, textarea {
+    border-radius: 8px !important;
+    background: #E8E4E1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #0a56a8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(10, 86, 168, 0.3);
+  }
+  
+  button {
+    padding: 12px;
+    font-weight: 600;
+    background-color: #0a56a8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #083d7e;
+  }
+  
+  /* MOBILE RESPONSIVE */
+  @media (max-width: 768px) {
+    .contact-info,
+    form {
+      margin-top: 20px;
+    }
+  }
+  

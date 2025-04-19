@@ -1,5 +1,5 @@
 <body><br><br>
-<div class="container mt-5">
+<!-- <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6 contact-info">
             <h2>Contact Information</h2>
@@ -19,17 +19,77 @@
                     </a>
             </div>
             <br>
-            <!-- Social Media Links -->
             <h4><strong>Follow Us</strong></h4>
             <div class="social-icons">
-                <!-- <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
-                <!-- <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a> -->
                 <a href="https://www.instagram.com/flyproductionhouse/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.youtube.com/{{youtube}}" target="_blank" ><i class="fab fa-youtube"></i></a>
-                <!-- <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
-                <!-- <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a> -->
             </div>
         </div>
     </div>
+</div> --><div class="container mt-5">
+  <div class="row justify-content-center align-items-start">
+
+    <!-- Contact Info Column -->
+    <div class="col-md-6 mb-5 contact-info">
+      <h2>Contact Information</h2>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>&nbsp; 
+        <a href="tel:+91 99873 06758">+91 99873 06758</a>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-tty"></i>&nbsp; 
+        <a href="tel:{{telNo}}">{{telNo}}</a>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>&nbsp;
+        <a href="mailto:{{email}}">{{email}}</a>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="https://maps.app.goo.gl/isk3Q5paa6PhZf1S7" target="_blank">
+          Vasari Hill Rd, Rustomjee Ease Zone Mall, Malad West,<br>
+          Mumbai, Maharashtra 400104.<br>
+          1st Floor Office No - 3068
+        </a>
+      </div>
+
+      <br>
+      <h4><strong>Follow Us</strong></h4>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/flyproductionhouse/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/{{youtube}}" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <br>
+      <hr>
+      <h4><strong>ENQUIRE NOW!!</strong></h4>
+      <form (submit)="sendEmail($event)">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="user_name">Name</label>
+            <input type="text" name="user_name" id="user_name" class="form-control" placeholder="Joe" required />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="user_email">Email</label>
+            <input type="email" name="user_email" id="user_email" class="form-control" placeholder="email@gmail.com" required />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="user_phone">Phone</label>
+            <input type="tel" name="user_phone" id="user_phone" class="form-control" pattern="[0-9]*" inputmode="numeric" placeholder="98989 89898" required/>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="message">Requirement's</label>
+            <textarea name="message" id="message" rows="3" class="form-control" placeholder="Requirements in details" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+      </form>
+    </div>
+  </div>
 </div>
+
+  
 </body>

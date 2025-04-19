@@ -23,6 +23,8 @@
     "@angular/youtube-player": "^17.3.10",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
     "firebase": "^10.14.1",
     "gapi-client": "^0.0.3",
     "gapi-script": "^1.2.0",
